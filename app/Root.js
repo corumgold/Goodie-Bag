@@ -1,6 +1,17 @@
-import React from "react";
+import React, { useEffect } from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { fetchCandies } from "./store";
 
 const Root = () => {
+  const dispatch = useDispatch();
+  const candies = useSelector((state) => state.candies);
+
+  useEffect(() => {
+    dispatch(fetchCandies());
+  }, []);
+
+console.log(candies)
+
   return (
     <div>
       <nav>Goodie Bag</nav>

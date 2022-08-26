@@ -6,12 +6,12 @@ The requirements below are broken into step-by-step instructions, which model th
 
 #### Backend
 
-- [ ] Write a `candies` model with the following information:
-  - [ ] name - not empty or null
-  - [ ] description - not empty or null
-  - [ ] quantity - cannot exceed 10 of the same candy in your goodie bag
-  - [ ] imageUrl - with a default value
-- [ ] Write a route to serve up all candies
+- [X] Write a `candies` model with the following information:
+  - [X] name - not empty or null
+  - [X] description - not empty or null
+  - [X] quantity - cannot exceed 10 of the same candy in your goodie bag
+  - [X] imageUrl - with a default value
+- [X] Write a route to serve up all candies
 
 #### Frontend
 - [ ] Write a candies sub-reducer to manage candies in your Redux store
