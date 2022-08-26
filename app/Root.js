@@ -3,6 +3,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { fetchCandies } from "./store";
 import Candies from "./components/Candies";
 import { Routes, Route } from "react-router-dom";
+import Nav from "./components/Nav";
 
 const Root = () => {
   const dispatch = useDispatch();
@@ -15,12 +16,12 @@ const Root = () => {
 
   return (
     <div>
-      <nav>Goodie Bag</nav>
+      <Nav/>
       <main>
         <h1>Welcome to the Goodie Bag!</h1>
         <p>What a nice home page for your goodies!</p>
         <Routes>
-          <Route exact path="/" element={<Candies />} />
+          <Route exact path="/candies" element={<Candies />} />
         </Routes>
       </main>
     </div>
