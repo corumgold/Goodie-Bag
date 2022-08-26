@@ -1713,6 +1713,7 @@ __webpack_require__.r(__webpack_exports__);
 
 const Nav = () => {
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("nav", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__.Link, {
+    className: "candy-link",
     to: "/candies"
   }, "All Candies"));
 };

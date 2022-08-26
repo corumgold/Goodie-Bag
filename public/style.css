@@ -6,11 +6,15 @@
 * {
   box-sizing: border-box;
   font-family: arial, sans-serif;
+  font-family: "Roboto", sans-serif;
+  font-family: "Emilys Candy", cursive;
+  color: #6d6875;
+  margin: 0;
 }
 
 body::after {
   content: "";
-  background: url('bg.jpg');
+  background: url("bg.jpg");
   opacity: 0.1;
   top: 0;
   left: 0;
@@ -22,11 +26,17 @@ body::after {
 
 nav {
   align-items: center;
-  background-color: #333333;
-  color: #c0c0c0;
+  background-color: #ffb4a2;
+  color: #e5989b;
   display: flex;
   height: 80px;
   padding: 10px;
+  margin-bottom: 2rem;
+  font-size: 1.5rem;
+}
+
+.candy-link {
+  text-decoration: none;
 }
 
 main {
