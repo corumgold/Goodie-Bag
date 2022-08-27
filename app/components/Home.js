@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { useDispatch } from "react-redux";
+import { createCandy } from "../store";
 
 const Home = () => {
   const [newCandy, setNewCandy] = useState({
@@ -21,11 +22,21 @@ const Home = () => {
     setNewCandy({ ...newCandy, description: event.target.value });
   };
 
-  
+  console.log(newCandy);
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    dispatch(createCandy({ ...newCandy }));
+    setNewCandy({
+      name: "",
+      imageUrl: "",
+      description: "",
+    });
+  };
 
   return (
     <div>
-      <form id="candy-form">
+      <form id="candy-form" onSubmit={handleSubmit}>
         <label htmlFor="candyName">Candy:</label>
         <input name="candyName" value={newCandy.name} onChange={handleName} />
 
