@@ -1,9 +1,11 @@
-import React from 'react'
+import React from "react";
+import { useParams } from "react-router";
 
 const SingleCandy = () => {
-  return (
-    <div>Candy</div>
-  )
-}
+  const params = useParams()
+  console.log(params)
 
-export default SingleCandy
+  return <div>Candy</div>;
+};
+
+export default SingleCandy;

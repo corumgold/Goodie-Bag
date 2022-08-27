@@ -24,15 +24,7 @@ export const fetchCandies = () => {
 };
 
 const initState = {
-  candies: [
-    {
-      id: 1,
-      name: "example",
-      description: "example description",
-      imageUrl:
-        "https://media.istockphoto.com/photos/assortment-of-multicolored-candies-jelly-beans-and-lollipops-picture-id1270389595?b=1&k=20&m=1270389595&s=170667a&w=0&h=j9las-CDlYSyWhmg-2jZDg22UAPGjpSv88aFsr8u-38=",
-    },
-  ],
+  candies: [],
 };
 
 const reducer = (state = initState, action) => {

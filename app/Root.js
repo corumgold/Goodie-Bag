@@ -4,6 +4,7 @@ import { fetchCandies } from "./store";
 import Candies from "./components/Candies";
 import { Routes, Route } from "react-router-dom";
 import Nav from "./components/Nav";
+import SingleCandy from "./components/SingleCandy";
 
 const Root = () => {
   const dispatch = useDispatch();
@@ -22,7 +23,8 @@ const Root = () => {
         <p>What a nice home page for your goodies!</p>
         <Routes>
           <Route index />
-          <Route exact path="/candies" element={<Candies />} />
+          <Route path="/candies" element={<Candies />} />
+          <Route path="/candies/:id" element={<SingleCandy />} />
         </Routes>
       </main>
     </div>
