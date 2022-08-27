@@ -8,7 +8,7 @@ const SingleCandy = () => {
   const candy = candies.find((candy) => candy.id === +params.id);
 
   return (
-    <div>
+    <div className="candy">
       <h1>{candy?.name}</h1>
       <img src={candy?.imageUrl} />
       <p>{candy?.description}</p>

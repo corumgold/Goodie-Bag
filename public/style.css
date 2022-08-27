@@ -53,11 +53,13 @@ main {
   justify-content: center;
 }
 
-.candy-list img {
+.candy-list img,
+.candy img {
   width: 200px;
 }
 
-.candy-list li {
+.candy-list li,
+.candy {
   margin: 2rem;
   display: flex;
   flex-direction: column;

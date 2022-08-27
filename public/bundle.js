@@ -1753,7 +1753,9 @@ const SingleCandy = () => {
   const params = (0,react_router_dom__WEBPACK_IMPORTED_MODULE_2__.useParams)();
   const candies = (0,react_redux__WEBPACK_IMPORTED_MODULE_1__.useSelector)(state => state.candies);
   const candy = candies.find(candy => candy.id === +params.id);
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h1", null, candy?.name), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "candy"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h1", null, candy?.name), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
     src: candy?.imageUrl
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, candy?.description));
 };
