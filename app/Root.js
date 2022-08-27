@@ -9,7 +9,6 @@ import SingleCandy from "./components/SingleCandy";
 const Root = () => {
   const dispatch = useDispatch();
   const candies = useSelector((state) => state.candies);
-  console.log(candies);
 
   useEffect(() => {
     dispatch(fetchCandies());
