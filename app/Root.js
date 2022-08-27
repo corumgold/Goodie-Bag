@@ -8,7 +8,7 @@ import Nav from "./components/Nav";
 const Root = () => {
   const dispatch = useDispatch();
   const candies = useSelector((state) => state.candies);
-  console.log(candies)
+  console.log(candies);
 
   useEffect(() => {
     dispatch(fetchCandies());
@@ -16,11 +16,12 @@ const Root = () => {
 
   return (
     <div>
-      <Nav/>
+      <Nav />
       <main>
         <h1>Welcome to the Goodie Bag!</h1>
         <p>What a nice home page for your goodies!</p>
         <Routes>
+          <Route index />
           <Route exact path="/candies" element={<Candies />} />
         </Routes>
       </main>
