@@ -21,7 +21,6 @@ const Root = () => {
         <h1>Welcome to the Goodie Bag!</h1>
         <p>What a nice home page for your goodies!</p>
         <Routes>
-          <Route index element={<Home />} />
           <Route path="/candies" element={<Candies />} />
           <Route path="/candies/:id" element={<SingleCandy />} />
         </Routes>

@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { useDispatch } from "react-redux";
 import { createCandy } from "../store";
 
-const Home = () => {
+const Form = () => {
   const [newCandy, setNewCandy] = useState({
     name: "",
     imageUrl: "",
@@ -62,4 +62,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default Form;
