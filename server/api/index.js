@@ -33,7 +33,7 @@ router.get("/candies/:id", async (req, res, next) => {
 
 router.post("/candies", async (req, res, next) => {
   try {
-    res.status(201).send(await Candy.create(req.params.id));
+    res.status(201).send(await Candy.create(req.body));
   } catch (err) {
     next(err);
   }

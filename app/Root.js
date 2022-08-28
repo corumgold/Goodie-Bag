@@ -9,7 +9,6 @@ import Home from "./components/Home";
 
 const Root = () => {
   const dispatch = useDispatch();
-  const candies = useSelector((state) => state.candies);
 
   useEffect(() => {
     dispatch(fetchCandies());

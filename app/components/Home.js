@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { useDispatch } from "react-redux";
 import { createCandy } from "../store";
 
@@ -33,6 +33,10 @@ const Home = () => {
       description: "",
     });
   };
+
+  useEffect(() => {
+    return;
+  }, [handleSubmit]);
 
   return (
     <div>
