@@ -35,9 +35,6 @@ const Home = () => {
     });
   };
 
-//   useEffect(() => {
-//     return;
-//   }, [handleSubmit]);
 
   return (
     <div>
