@@ -1752,16 +1752,16 @@ const Home = () => {
     event.preventDefault();
     dispatch((0,_store__WEBPACK_IMPORTED_MODULE_2__.createCandy)({ ...newCandy
     }));
-    setNewCandy({
+    setNewCandy({ ...newCandy,
       name: "",
       imageUrl: "",
       description: ""
     });
-  };
+  }; //   useEffect(() => {
+  //     return;
+  //   }, [handleSubmit]);
 
-  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
-    return;
-  }, [handleSubmit]);
+
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("form", {
     id: "candy-form",
     onSubmit: handleSubmit
@@ -1924,6 +1924,11 @@ const reducer = (state = initState, action) => {
     case SET_CANDIES:
       return { ...state,
         candies: action.candies
+      };
+
+    case CREATE_CANDY:
+      return { ...state,
+        candies: [...state.candies, action.candy]
       };
 
     default:

@@ -46,6 +46,8 @@ const reducer = (state = initState, action) => {
   switch (action.type) {
     case SET_CANDIES:
       return { ...state, candies: action.candies };
+    case CREATE_CANDY:
+      return { ...state, candies: [...state.candies, action.candy] };
     default:
       return state;
   }

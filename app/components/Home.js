@@ -28,15 +28,16 @@ const Home = () => {
     event.preventDefault();
     dispatch(createCandy({ ...newCandy }));
     setNewCandy({
+      ...newCandy,
       name: "",
       imageUrl: "",
       description: "",
     });
   };
 
-  useEffect(() => {
-    return;
-  }, [handleSubmit]);
+//   useEffect(() => {
+//     return;
+//   }, [handleSubmit]);
 
   return (
     <div>
