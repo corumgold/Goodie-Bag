@@ -5,7 +5,6 @@ import Candies from "./components/Candies";
 import { Routes, Route } from "react-router-dom";
 import Nav from "./components/Nav";
 import SingleCandy from "./components/SingleCandy";
-import Home from "./components/Home";
 
 const Root = () => {
   const dispatch = useDispatch();

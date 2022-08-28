@@ -47,6 +47,14 @@ main {
   justify-content: center;
 }
 
+.form {
+  margin: 1rem;
+}
+
+.form input {
+  margin-right: 1rem;
+}
+
 .candy-list {
   display: flex;
   align-items: center;

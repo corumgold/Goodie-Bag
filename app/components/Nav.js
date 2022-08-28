@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { useSelector } from "react-redux";
 
@@ -10,7 +10,7 @@ const Nav = () => {
       <Link className="candy-link" to="/candies">
         All Candies
       </Link>
-      {candies.map((candy) => {
+      {candies?.map((candy) => {
         const route = `/candies/${candy.id}`;
         return (
           <Link key={candy.id} className="candy-link" to={route}>

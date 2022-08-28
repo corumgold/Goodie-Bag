@@ -1,6 +1,7 @@
 import React from "react";
 import { useSelector } from "react-redux";
-import Form from "./Home";
+import Form from "./Form";
+
 
 const Candies = () => {
   const candies = useSelector((state) => state.candies);
